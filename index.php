@@ -20,13 +20,14 @@
 	      <h2>SIGN UP</h2>
 
 	        <form form class="form-asd" role="form" action="actions.php" method="post">
-	        	<!-- change in put email css -->
+	        	<!-- FIRST NAME -->
 	        	<div class="form-group">
         		  <div class="row">
     			    <div class="col-sm-4">
 			          <label for="inputFirst">First Name</label>
 		        	    <input name="fname" type="text" class="form-control" id="inputFirst" placeholder="First">
 	        		</div>
+
 	        		<div class="col-sm-4">
 	        		  <label for="inputLast">Last Name</label>
 				        <input name="lname" type="text" class="form-control" id="inputLast" placeholder="Last">               
@@ -47,38 +48,39 @@
         			<div class="row">
 	        			<div class="col-sm-5">
 			        		<label for="inputPhone">Phone Number </label>
-		        				<input type="text" class="form-control" id="inputPhone" placeholder="(xxx) xxx-xxxx">
+		        				<input name="pnumber" type="text" class="form-control" id="inputPhone" placeholder="(xxx) xxx-xxxx">
 	        			</div>
         			</div>
         		</div>
+
 	        	<div class="form-group">
         			<div class="row">
 	        			<div class="col-sm-5">
-			        		<label for="inputEmail">Birthday </label>
-		        				<input type="email" class="form-control" id="inputBirthday" placeholder="Birthday">
+			        		<label for="inputBirthday">Birthday </label>
+		        				<input name="birthday" type="text" class="form-control" id="inputBirthday" placeholder="Birthday">
 	        			</div>
         			</div>
         		</div>
-	        	
+	        		
         			<div class="row">
-        				<div class="col-sm-2">
-		        			<div class="form-check form-check-inline">
-							  <label class="form-check-label">
-							    <input class="form-check-input" type="radio" name="radioOption" id="femaleRadio" value="femaleOption"> Female
-							  </label>
-							</div>
-						</div>
-						<div class="col-sm-2">
-							<div class="form-check form-check-inline">
-							  <label class="form-check-label">
-							    <input class="form-check-input" type="radio" name="radioOption" id="maleRadio" value="maleOption"> Male
-							  </label>
-							</div>
-        				</div>
-        				<button id="submit" type="submit" class="btn btn-primary">Submit</button>
+	        				<div class="col-sm-2">
+			        			<div class="form-check form-check-inline">
+										  <label class="form-check-label">
+										    <input class="form-check-input" type="radio" name="radioOption" id="femaleRadio" value="femaleOption"> Female
+										  </label>
+										</div>
+									</div>
 
-        				<input type="submit">
+								<div class="col-sm-2">
+									<div class="form-check form-check-inline">
+									  <label class="form-check-label">
+									    <input class="form-check-input" type="radio" name="radioOption" id="maleRadio" value="maleOption"> Male
+									  </label>
+									</div>
+		        		</div>
         			</div>
+
+	        		<button id="submit" type="submit" class="btn btn-primary">Submit</button>
 	        </form> 
       </div>
     </body>
