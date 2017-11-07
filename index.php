@@ -38,8 +38,10 @@
         		<div class="form-group">
         			<div class="row">
 	        			<div class="col-sm-5">
-			        		<label for="inputEmail">E-mail </label>
+	        				<form method="post" id="form" action="action.php">
+			        			<label for="inputEmail">E-mail </label>
 		        				<input type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
+	        				</form>
 	        			</div>
         			</div>
         		</div>
@@ -77,6 +79,7 @@
 							</div>
         				</div>
         			</div>
+
         			<button type="submit" class="btn btn-primary">Submit</button>
 
  
