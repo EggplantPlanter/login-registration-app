@@ -18,30 +18,27 @@
           <!--circle image here-->
           <!--<img src="user.png" class="icon-box">-->
 	      <h2>SIGN UP</h2>
-	        <form>
-	        	<!-- change input email css -->
+
+	        <form form class="form-asd" role="form" action="actions.php" method="post">
+	        	<!-- change in put email css -->
 	        	<div class="form-group">
-	        		<div class="row">
-	        			<div class="col-sm-4">
-			        		<label for="inputFirst">First Name</label>
-		        				<input type="text" class="form-control" id="inputFirst" placeholder="First">
-		        			
-	        			</div>
-	        			<div class="col-sm-4">
-	        				<label for="inputLast">Last Name</label>
-					        <input type="text" class="form-control" id="inputLast" placeholder="Last">   
-					             
-	        			</div>
+        		  <div class="row">
+    			    <div class="col-sm-4">
+			          <label for="inputFirst">First Name</label>
+		        	    <input name="fname" type="text" class="form-control" id="inputFirst" placeholder="First">
 	        		</div>
+	        		<div class="col-sm-4">
+	        		  <label for="inputLast">Last Name</label>
+				        <input name="lname" type="text" class="form-control" id="inputLast" placeholder="Last">               
+	        		</div>
+	        	  </div>
 	        	</div>
 
         		<div class="form-group">
         			<div class="row">
 	        			<div class="col-sm-5">
-	        				<form method="post" id="form" action="action.php">
 			        			<label for="inputEmail">E-mail </label>
-		        				<input type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
-	        				</form>
+		        				<input name="email" type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
 	        			</div>
         			</div>
         		</div>
@@ -78,11 +75,10 @@
 							  </label>
 							</div>
         				</div>
+        				<button id="submit" type="submit" class="btn btn-primary">Submit</button>
+
+        				<input type="submit">
         			</div>
-
-        			<button type="submit" class="btn btn-primary">Submit</button>
-
- 
 	        </form> 
       </div>
     </body>
