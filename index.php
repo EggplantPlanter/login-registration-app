@@ -13,75 +13,111 @@
     
     <body>
 
-      <div class="container sign-up-box">
-	    
-          <!--circle image here-->
-          <!--<img src="user.png" class="icon-box">-->
-	      <h2>SIGN UP</h2>
+      <div class="container">
+      		<div class="col">
+      			<div id="sign-up-box">
+      			
+		      		<h2>SIGN UP</h2>
+			        <form form class="form-asd" role="form" action="actions.php" method="post">
 
-	        <form form class="form-asd" role="form" action="actions.php" method="post">
-	        	<!-- FIRST NAME -->
-	        	<div class="form-group">
-        		  <div class="row">
-    			    <div class="col-sm-4">
-			          <label for="inputFirst">First Name</label>
-		        	    <input name="fname" type="text" class="form-control" id="inputFirst" placeholder="First">
-	        		</div>
+			        	<!-- FIRST NAME -->
+			        	<div class="form-group">
+		        		  <div class="row">
+		    			    <div class="col-sm-4">
+					          <label for="inputFirst">First Name</label>
+				        	    <input name="fname" type="text" class="form-control" id="inputFirst" placeholder="First" required>
+			        		</div>
+			        		<div class="col-sm-4">
+			        		  <label for="inputLast">Last Name</label>
+						        <input name="lname" type="text" class="form-control" id="inputLast" placeholder="Last" required>               
+			        		</div>
+			        	  </div>
+			        	</div>
 
-	        		<div class="col-sm-4">
-	        		  <label for="inputLast">Last Name</label>
-				        <input name="lname" type="text" class="form-control" id="inputLast" placeholder="Last">               
-	        		</div>
-	        	  </div>
-	        	</div>
+		        		<div class="form-group">
+		        			<div class="row">
+			        			<div class="col-sm-5">
+					        			<label for="inputEmail">E-mail </label>
+				        				<input name="email" type="email" class="form-control" id="inputEmail" placeholder="hello@world.com" required>
+			        			</div>
+		        			</div>
+		        		</div>
 
-        		<div class="form-group">
+			        	<div class="form-group">
+		        			<div class="row">
+			        			<div class="col-sm-5">
+					        		<label for="inputPhone">Phone Number </label>
+				        				<input name="pnumber" type="text" class="form-control" id="inputPhone" placeholder="(xxx) xxx-xxxx" required>
+			        			</div>
+		        			</div>
+		        		</div>
+
+			        	<div class="form-group">
+		        			<div class="row">
+			        			<div class="col-sm-5">
+					        		<label for="inputBirthday">Birthday </label>
+				        				<input name="birthday" type="text" class="form-control" id="inputBirthday" placeholder="Birthday" required>
+			        			</div>
+		        			</div>
+		        		</div>
+
+		        		<div class="form-group">
+		        			<div class="row">
+			        			<div class="col-sm-5">
+					        		<label for="inputPass">Password </label>
+				        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password" required>
+			        			</div>
+		        			</div>
+		        		</div>
+			        		
+		        			<div class="row">
+			        				<div class="col-sm-2">
+					        			<div class="form-check form-check-inline">
+												  <label class="form-check-label">
+												    <input class="form-check-input" type="radio" name="gender" id="femaleRadio" value="female" required> Female
+												  </label>
+												</div>
+											</div>
+
+										<div class="col-sm-2">
+											<div class="form-check form-check-inline">
+											  <label class="form-check-label">
+											    <input class="form-check-input" type="radio" name="gender" id="maleRadio" value="male" required> Male
+											  </label>
+											</div>
+				        		</div>
+		        			</div>
+
+			        		<button name='name' id="submit" type="submit" class="btn btn-primary">Sign Up</button>
+			        </form> 
+		      	</div> <!-- END SIGN UP BOX -->
+	      	</div> <!-- END OF COLUMN -->
+
+		    <div class="col">
+		    	<div id="login-box">
+
+			     	<div class="form-group">
         			<div class="row">
-	        			<div class="col-sm-5">
+	        			<div class="col-sm-6">
 			        			<label for="inputEmail">E-mail </label>
 		        				<input name="email" type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
 	        			</div>
         			</div>
         		</div>
 
-	        	<div class="form-group">
+        		<div class="form-group">
         			<div class="row">
-	        			<div class="col-sm-5">
-			        		<label for="inputPhone">Phone Number </label>
-		        				<input name="pnumber" type="text" class="form-control" id="inputPhone" placeholder="(xxx) xxx-xxxx">
+	        			<div class="col-sm-6">
+			        		<label for="inputPass">Password </label>
+		        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password">
 	        			</div>
         			</div>
         		</div>
+        		<button name='name' id="submit" type="submit" class="btn btn-primary">Login</button>
+        </div> <!-- END OF LOGIN BOX -->       
+      </div><!-- END OF COLUMN -->
 
-	        	<div class="form-group">
-        			<div class="row">
-	        			<div class="col-sm-5">
-			        		<label for="inputBirthday">Birthday </label>
-		        				<input name="birthday" type="text" class="form-control" id="inputBirthday" placeholder="Birthday">
-	        			</div>
-        			</div>
-        		</div>
-	        		
-        			<div class="row">
-	        				<div class="col-sm-2">
-			        			<div class="form-check form-check-inline">
-										  <label class="form-check-label">
-										    <input class="form-check-input" type="radio" name="radioOption" id="femaleRadio" value="femaleOption"> Female
-										  </label>
-										</div>
-									</div>
-
-								<div class="col-sm-2">
-									<div class="form-check form-check-inline">
-									  <label class="form-check-label">
-									    <input class="form-check-input" type="radio" name="radioOption" id="maleRadio" value="maleOption"> Male
-									  </label>
-									</div>
-		        		</div>
-        			</div>
-
-	        		<button id="submit" type="submit" class="btn btn-primary">Submit</button>
-	        </form> 
-      </div>
+		</div> <!-- END OF CONTAINER -->
+	     
     </body>
 </html>
