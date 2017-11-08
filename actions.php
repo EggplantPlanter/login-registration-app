@@ -7,33 +7,33 @@ $lname = $_POST['lname'];
 $email = $_POST['email'];
 $pnumber = $_POST['pnumber'];
 $birthday = $_POST['birthday'];
+$gender = $_POST['gender'];
+$password = $_POST['pass'];
+
 
 echo "First Name: " . $fname . "<br>"; 
 echo "Last Name: " . $lname . "<br>"; 
 echo "Email: " . $email . "<br>";
 echo "Phone Number: " . $pnumber . "<br>";
-echo "Birthday: " . $birthday. "<br><br>"; 
+echo "Birthday: " . $birthday. "<br>"; 
+echo "Gender: " . $gender. "<br>"; 
+echo "Password: " . $password. "<br><br>"; 
 
-
-function checkEmail($email){
 	$sql = "SELECT email FROM accounts WHERE email = '$email'";
 	$results = runQuery($sql);
 
-	if( count($results) > 0 ) { # If rows are found for query
-     echo "Email found! " . $email;
+	if( count($results) > 0 ) {
+     echo "The email " . $email . $lname . " already exists, please use another one. " . $fname . "hello wold";
 	}
 	else {
-	     echo "Email not found! " . $email;
+		$sql = "INSERT INTO accounts VALUES('', '$email', '$fname', '$lname', '$pnumber', '$birthday', '$gender', '$password')";
+		$results = runQuery($sql);
+	     echo "You may now login with the email " . $email . $fname;
 	}
 
-}
+
 	
 checkEmail($email);
-
-//checkEmail(); 
-
-
-
 
 
 ?>
