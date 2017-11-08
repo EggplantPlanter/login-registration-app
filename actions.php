@@ -28,12 +28,18 @@ echo "Password: " . $password. "<br><br>";
 	else {
 		$sql = "INSERT INTO accounts VALUES('', '$email', '$fname', '$lname', '$pnumber', '$birthday', '$gender', '$password')";
 		$results = runQuery($sql);
-	     echo "You may now login with the email " . $email . $fname;
+	    echo "You may now login with the email " . $email;
+	    //Tell user to go to previous page
+
+
 	}
 
+/*
+TO DO:
+- Tell user to go to previous page
+- insert home button
+*/
 
-	
-checkEmail($email);
 
 
 ?>
