@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     </head>
     
@@ -56,7 +56,7 @@
 		        			<div class="row">
 			        			<div class="col-sm-5">
 					        		<label for="inputBirthday">Birthday </label>
-				        				<input name="birthday" type="text" class="form-control" id="inputBirthday" placeholder="Birthday" required>
+				        				<input name="birthday" type="text" class="form-control" id="inputBirthday" placeholder="2017/12/31" required>
 			        			</div>
 		        			</div>
 		        		</div>
@@ -65,7 +65,7 @@
 		        			<div class="row">
 			        			<div class="col-sm-5">
 					        		<label for="inputPass">Password </label>
-				        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password" required>
+				        				<input name="pass" type="text" class="form-control" id="inputPassword" placeholder="Password" required>
 			        			</div>
 		        			</div>
 		        		</div>
@@ -96,7 +96,7 @@
 		    <div class="col">
 		    	<div id="login-box">
 
-		    		<form form class="form-asd" role="form" action="login-actions.php" method="post">
+		    		<form form class="form-asd" role="form" action="actions.php" method="post">
 				     	<div class="form-group">
 	        			<div class="row">
 		        			<div class="col-sm-6">
@@ -110,7 +110,7 @@
 	        			<div class="row">
 		        			<div class="col-sm-6">
 				        		<label for="inputPass">Password </label>
-			        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password">
+			        				<input name="pass" type="text" class="form-control" id="inputPassword" placeholder="Password">
 		        			</div>
 	        			</div>
 	        		</div>
@@ -119,7 +119,9 @@
 	        	</form> <!-- END OF FORM -->
         </div> <!-- END OF LOGIN BOX -->       
       </div><!-- END OF COLUMN -->
+
 		</div> <!-- END OF CONTAINER -->
+
 	     
-  </body>
+    </body>
 </html>

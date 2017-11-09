@@ -5,10 +5,7 @@
 $email = $_POST['email'];
 $password = $_POST['pass'];
 
-echo "Email: " . $email . "<br>";
-echo "Password: " . $password. "<br><br>"; 
-
-if(isset($email, $password)){
+ if(isset($email, $password)){
 	$sql = "SELECT * FROM accounts WHERE email = '$email' AND password='$password'";
 	$results = runQuery($sql);
 
@@ -19,7 +16,7 @@ if(isset($email, $password)){
 		}
 
     	echo "Hello " . $firstname . " " . $lastname;
-    	
+
 	}
 
 	else {
@@ -29,7 +26,7 @@ if(isset($email, $password)){
 	    //Tell user to go to previous page
 
 	}
-}
+ }
 	
 
 	

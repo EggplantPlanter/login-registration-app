@@ -3,20 +3,19 @@
   padding:0;
 }
 
-html{
+/*html{
   margin: 75px;
-}
-
-body {
+}*/
+/*body {
     margin: 75px 0px;
     padding: 0;
     /*background: url(bg.png);*/
-    background: #87CEFF !important;
+    /*background: #87CEFF !important;*/
 /*TODO: background gradient blue to white?*/
     /*background-size: cover;*/
-    font-family: 'Lato', sans-serif !important;
+    /*font-family: 'Lato', sans-serif !important;
 }
-
+*/
 #sign-up-box{
     float:left;
     width: 500px !important;
