@@ -96,28 +96,30 @@
 		    <div class="col">
 		    	<div id="login-box">
 
-			     	<div class="form-group">
-        			<div class="row">
-	        			<div class="col-sm-6">
-			        			<label for="inputEmail">E-mail </label>
-		        				<input name="email" type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
+		    		<form form class="form-asd" role="form" action="login-actions.php" method="post">
+				     	<div class="form-group">
+	        			<div class="row">
+		        			<div class="col-sm-6">
+				        			<label for="inputEmail">E-mail </label>
+			        				<input name="email" type="email" class="form-control" id="inputEmail" placeholder="hello@world.com">
+		        			</div>
 	        			</div>
-        			</div>
-        		</div>
+	        		</div>
 
-        		<div class="form-group">
-        			<div class="row">
-	        			<div class="col-sm-6">
-			        		<label for="inputPass">Password </label>
-		        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password">
+	        		<div class="form-group">
+	        			<div class="row">
+		        			<div class="col-sm-6">
+				        		<label for="inputPass">Password </label>
+			        				<input name="pass" type="text" class="form-control" id="inputBirthday" placeholder="Password">
+		        			</div>
 	        			</div>
-        			</div>
-        		</div>
-        		<button name='name' id="submit" type="submit" class="btn btn-primary">Login</button>
+	        		</div>
+	        		<button name='name' id="submit" type="submit" class="btn btn-primary">Login</button>
+
+	        	</form> <!-- END OF FORM -->
         </div> <!-- END OF LOGIN BOX -->       
       </div><!-- END OF COLUMN -->
-
 		</div> <!-- END OF CONTAINER -->
 	     
-    </body>
+  </body>
 </html>
