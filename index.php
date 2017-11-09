@@ -100,7 +100,7 @@
 		    	<div id="login-box">
 		    		<h2>LOGIN</h2>
 
-		    		<form form class="form-asd" role="form" action="actions.php" method="post">
+		    		<form form class="form-asd" role="form" action="login-actions.php" method="post">
 				     	<div class="form-group">
 	        			<div class="row">
 		        			<div class="col-sm-12">
