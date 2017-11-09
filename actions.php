@@ -10,7 +10,6 @@ $birthday = $_POST['birthday'];
 $gender = $_POST['gender'];
 $password = $_POST['pass'];
 
-
 echo "First Name: " . $fname . "<br>"; 
 echo "Last Name: " . $lname . "<br>"; 
 echo "Email: " . $email . "<br>";
@@ -23,14 +22,14 @@ echo "Password: " . $password. "<br><br>";
 	$results = runQuery($sql);
 
 	if( count($results) > 0 ) {
-     echo "The email " . $email . $lname . " already exists, please use another one. " . $fname . "hello wold";
+
+    	echo "The email " . $email . " already exists, please use another one. Redirecting you to previous page. ";
 	}
 	else {
 		$sql = "INSERT INTO accounts VALUES('', '$email', '$fname', '$lname', '$pnumber', '$birthday', '$gender', '$password')";
 		$results = runQuery($sql);
 	    echo "You may now login with the email " . $email;
 	    //Tell user to go to previous page
-
 
 	}
 
