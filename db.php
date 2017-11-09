@@ -10,7 +10,7 @@ try{
 
 	$conn = new PDO("mysql:host=$hostname;dbname=elr9",
 	$username, $password);
-	echo "SUCCESSFULLY connected to database $username <br><br>"; 
+	// echo "SUCCESSFULLY connected to database $username <br><br>"; 
 
 }//END TRY BLOCK
 
